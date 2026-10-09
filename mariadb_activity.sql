@@ -30,10 +30,10 @@ CREATE TABLE courses(
     units INT
     );
 INSERT INTO courses (course_name,description,units)
-    -> VALUES
-    -> ('CIT17','Web Information System',3),
-    -> ('ÇIT6','Capstone 1',3),
-    -> ('CC13','Systems Analysis and Design',3),
-    -> ('CC6','Emerging Technologies',3),
-    -> ('CC17','Mobile Application Design and Development',3);
+    VALUES
+    ('CIT17','Web Information System',3),
+    ('ÇIT6','Capstone 1',3),
+    ('CC13','Systems Analysis and Design',3),
+    ('CC6','Emerging Technologies',3),
+    ('CC17','Mobile Application Design and Development',3);
 SELECT*FROM courses;
