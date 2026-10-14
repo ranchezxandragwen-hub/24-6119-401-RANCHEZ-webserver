@@ -54,19 +54,19 @@ INSERT INTO enrollments (student_id, course_id, enrollment_date) VALUES
 (1,1, '2026-10-14'),
 (1,2, '2026-10-14'),
 (3,4, '2026-10-14'),
-(2,10, '2026-10-14'),
+(2,8, '2026-10-14'),
 (5,12, '2026-10-14'),
 (1,8, '2026-10-14'),
 (3,5, '2026-10-14'),
-(3,17, '2026-10-14'),
-(7,16, '2026-10-14'),
+(3,10, '2026-10-14'),
+(7,9, '2026-10-14'),
 (9,6, '2026-10-14');
 
 SELECT s.id, s.name, s.course AS program, c.course_name
 FROM students s
 JOIN enrollments e ON s.id = e.student_id
 JOIN courses c ON e.course_id = c.course_id
-WHERE c.course_name = CC10;
+WHERE c.course_name = 'CC10';
 
 SELECT c.course_id, c.course_name, c.description, c.units
 FROM courses c
